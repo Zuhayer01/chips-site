@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titan+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Titan+One&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        #fancy {
+            font-family: "Titan One", sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            color: white;
+            font-family: "Quicksand", sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-teal-600 overflow-x-hidden">
+    <header class="h-[13vh] w-full shadow-md fixed">
+        <header class="h-[13vh] w-full flex items-center justify-around backdrop-blur-lg">
+            <div id="logo" class="overflow-hidden">
+                <h1 id="fancy" class="text-white text-5xl drop-shadow-lg">Chips</h1>
+            </div>
+            <div id="menu">
+                <ul class="flex items-center justify-center gap-10 overflow-hidden">
+                    <li><a href="#home" class="font-semibold hover:text-teal-100 transition-all">Home</a></li>
+                    <li><a href="#care" class="font-semibold hover:text-teal-100 transition-all">Care</a></li>
+                    <li><a href="#products" class="font-semibold hover:text-teal-100 transition-all">Products</a></li>
+                    <li><a href="#contact" class="font-semibold hover:text-teal-100 transition-all">Contact</a></li>
+                </ul>
+            </div>
+            <div id="social">
+                <ul class="flex items-center justify-center gap-5 overflow-hidden">
+                    <li><a href="https://www.facebook.com/"><i class="ri-facebook-circle-line text-2xl"></i></a></li>
+                    <li><a href="https://twitter.com/?lang=en"><i class="ri-twitter-x-fill text-2xl"></i></a></li>
+                    <li><a href="https://www.instagram.com/"><i class="ri-instagram-line text-2xl"></i></a></li>
+                </ul>
+            </div>
+            <div id="buttons" class="hidden">
+                <i class="ri-menu-3-line" id="bars"></i>
+            </div>
+        </header>
+    </header>
+
+    <main class="-z-10">
+        <section id="home" class="w-full h-[100vh] flex items-center justify-center">
+            <div id="hero-data" class="text-white w-[30vw] h-[70%]">
+                <h1 class="text-[90px] leading-none w-[400px] mt-20" id="hero-title">Snack With No Limits</h1>
+                <p class="mt-8 w-[70%]">When you are hungry and don't have time
+                    to cook, snacks are the perfect solution,
+                    always prepare for midday hunger.
+                </p>
+                <div id="hero-btns" class="mt-16 w-full h-[10vh]">
+                    <button class="px-8 py-3 bg-orange-400 drop-shadow-xl text-orange-900 font-bold rounded-full">Snack
+                        Now</button>
+                    <button
+                        class="px-8 py-3 ml-4 border-[2px] text-orange-300 border-orange-300 font-bold rounded-full hover:bg-orange-400 hover:text-orange-900 transition-all duration-500"
+                        id="buy-btn">Buy
+                        Now</button>
+                </div>
+            </div>
+            <div id="hero-img" class="w-[40%] h-[70%] relative flex items-center justify-center">
+                <div id="outer"
+                    class="shadow-inner w-[530px] h-[530px] bg-teal-700 rounded-full flex items-center justify-center drop-shadow-3xl">
+                    <div id="inner"
+                        class="w-[400px] h-[400px] bg-orange-400 rounded-full flex items-center justify-center">
+                        <img src="https://raw.githubusercontent.com/bedimcode/responsive-chips-website/main/assets/img/home-chips.png"
+                            alt="" class="drop-shadow-xl rotate-[10deg] mt-10">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="care" class="h-[90vh] w-[100vw]">
+            <div id="care-top" class="h-[10vh] flex items-center justify-center">
+                <h1 class="text-4xl text-white w-[300px] text-center" id="fancy">Enjoy And Take Care Of Your Health</h1>
+            </div>
+            <div id="care-main" class="flex items-center justify-center">
+                <div id="care-img">
+                    <img src="https://raw.githubusercontent.com/bedimcode/responsive-chips-website/main/assets/img/care-chips.png"
+                        alt="" class="max-h-[400px]">
+                </div>
+                <div id="care-data" class="mt-10">
+                    <div id="care-box" class="flex items-center justify-center">
+                        <div id="care-box-icon" class="p-5">
+                            <i class="ri-plant-line text-3xl text-orange-300"></i>
+                        </div>
+                        <div id="care-text" class="w-[60%]">
+                            The potatoes that are made into
+                            snacks are grown and harvested and
+                            are 100% organic.
+                        </div>
+
+                    </div>
+                    <div id="care-box" class="flex items-center justify-center">
+                        <div id="care-box-icon" class="p-5">
+                            <i class="ri-fire-line  text-3xl text-orange-300"></i>
+                        </div>
+                        <div id="care-text" class="w-[60%]">
+                            We fry the fries with vegetable and
+                            natural oil for good care.
+                        </div>
+
+                    </div>
+                    <div id="care-box" class="flex items-center justify-center">
+                        <div id="care-box-icon" class="p-5">
+                            <i class="ri-heart-pulse-line  text-3xl text-orange-300"></i>
+                        </div>
+                        <div id="care-text" class="w-[60%]">
+                            The potatoes are not processed, once
+                            cleaned they are cooked without
+                            preservatives.
+                        </div>
+
+                    </div>
+                    <div id="care-box" class="flex items-center justify-center">
+                        <div id="care-box-icon" class="p-5">
+                            <i class="ri-hand-heart-line  text-3xl text-orange-300"></i>
+                        </div>
+                        <div id="care-text" class="w-[60%]">
+                            They contain fewer calories and less
+                            fat for good health.
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div id="care-footer"
+                class="w-[100vw] h-[17vh] flex items-center justify-around bg-orange-400 mt-24 overflow-hidden">
+                <h1 class="text-5xl text-orange-900" id="fancy"><i class="ri-leaf-line text-orange-900"></i> Good For
+                    Nature</h1>
+                <h1 class="text-5xl text-orange-900" id="fancy"><i class="ri-heart-pulse-line  text-orange-900"></i>Low
+                    calories</h1>
+            </div>
+        </section>
+        <section id="products" class="w-full h-[120vh] mt-[50px]">
+            <div id="prd-top" class="w-full h-[13vh] flex items-center justify-center">
+                <h1 id="fancy" class="text-5xl w-[350px] text-center ">Best Selling Products</h1>
+            </div>
+            <div id="prd-main" class="w-full h-[70vh] flex items-center justify-center flex-wrap px-72 gap-20 pt-32">
+                <div id="prd-box" class="w-[300px] h-[300px] bg-teal-700 rounded-[40px]  mt-16">
+                    <div id="chips-flv" class="h-[180px]">
+                        <img src="https://raw.githubusercontent.com/bedimcode/responsive-chips-website/main/assets/img/product-chips-1.png"
+                            alt=""
+                            class="relative top-[-90px] left-[50px] h-[250px] hover:scale-[1.1] transition-all duration-500">
+                    </div>
+                    <div id="chips-desc" class="h-[170px] px-8">
+                        <p>Crab</p>
+                        <h1 id="fancy" class="text-2xl">Chips</h1>
+                        <h2 id="fancy" class="text-md">8$</h2>
+                    </div>
+                    <i
+                        class="ri-shopping-bag-3-line p-2 relative bottom-[115px] right-[-230px] rounded-xl text-2xl bg-orange-400 text-orange-900"></i>
+                </div>
+                <div id="prd-box" class="w-[300px] h-[300px] bg-teal-700 rounded-[40px]  mt-16">
+                    <div id="chips-flv" class="h-[180px]">
+                        <img src="https://raw.githubusercontent.com/bedimcode/responsive-chips-website/main/assets/img/product-chips-2.png"
+                            alt=""
+                            class="relative top-[-90px] left-[50px] h-[250px] hover:scale-[1.1] transition-all duration-500">
+                    </div>
+                    <div id="chips-desc" class="h-[170px] px-8">
+                        <p>Cheese</p>
+                        <h1 id="fancy" class="text-2xl">Chips</h1>
+                        <h2 id="fancy" class="text-md">8$</h2>
+                    </div>
+                    <i
+                        class="ri-shopping-bag-3-line p-2 relative bottom-[115px] right-[-230px] rounded-xl text-2xl bg-orange-400 text-orange-900"></i>
+                </div>
+                <div id="prd-box" class="w-[300px] h-[300px] bg-teal-700 rounded-[40px]  mt-16">
+                    <div id="chips-flv" class="h-[180px]">
+                        <img src="https://raw.githubusercontent.com/bedimcode/responsive-chips-website/main/assets/img/product-chips-3.png"
+                            alt=""
+                            class="relative top-[-90px] left-[50px] h-[250px] hover:scale-[1.1] transition-all duration-500">
+                    </div>
+                    <div id="chips-desc" class="h-[170px] px-8">
+                        <p>BBQ</p>
+                        <h1 id="fancy" class="text-2xl">Chips</h1>
+                        <h2 id="fancy" class="text-md">8$</h2>
+                    </div>
+                    <i
+                        class="ri-shopping-bag-3-line p-2 relative bottom-[115px] right-[-230px] rounded-xl text-2xl bg-orange-400 text-orange-900"></i>
+                </div>
+                <div id="prd-box" class="w-[300px] h-[300px] bg-teal-700 rounded-[40px] mt-16">
+                    <div id="chips-flv" class="h-[180px]">
+                        <img src="https://raw.githubusercontent.com/bedimcode/responsive-chips-website/main/assets/img/product-chips-4.png"
+                            alt=""
+                            class="relative top-[-90px] left-[50px] h-[250px] hover:scale-[1.1] transition-all duration-500">
+                    </div>
+                    <div id="chips-desc" class="h-[170px] px-8">
+                        <p>Spicy</p>
+                        <h1 id="fancy" class="text-2xl">Chips</h1>
+                        <h2 id="fancy" class="text-md">8$</h2>
+                    </div>
+                    <i
+                        class="ri-shopping-bag-3-line p-2 relative bottom-[115px] right-[-230px] rounded-xl text-2xl bg-orange-400 text-orange-900"></i>
+                </div>
+                <div id="prd-box" class="w-[300px] h-[300px] bg-teal-700 rounded-[40px] mt-16">
+                    <div id="chips-flv" class="h-[180px]">
+                        <img src="https://raw.githubusercontent.com/bedimcode/responsive-chips-website/main/assets/img/product-chips-5.png"
+                            alt=""
+                            class="relative top-[-90px] left-[50px] h-[250px] hover:scale-[1.1] transition-all duration-500">
+                    </div>
+                    <div id="chips-desc" class="h-[170px] px-8">
+                        <p>Mixed Taste</p>
+                        <h1 id="fancy" class="text-2xl">Chips</h1>
+                        <h2 id="fancy" class="text-md">8$</h2>
+                    </div>
+                    <i
+                        class="ri-shopping-bag-3-line p-2 relative bottom-[115px] right-[-230px] rounded-xl text-2xl bg-orange-400 text-orange-900"></i>
+                </div>
+
+            </div>
+        </section>
+        <section id="contact" class="w-full h-[90vh] flex justify-center items-center">
+            <div id="cnt-wrapper" class="w-[80vw] h-[60vh] rounded-[50px] overflow-hidden">
+                <div id="ctn-title" class="w-full h-[15vh] flex items-center justify-center mt-6">
+                    <h1 class="w-[300px] text-4xl text-center">Contact Us To Eat Chips</h1>
+                </div>
+                <div id="cnt-lower-area" class="w-full h-[42vh] flex items-center justify-center">
+                    <div id="data-boxes" class="w-1/2 h-[32vh] flex items-center justify-center flex-wrap px-20">
+                        <div id="cnt-box" class="h-[100px] w-[210px]">
+                            <h1 id="fancy" class="text-2xl">Write US</h1>
+                            <h1 id="sucker" class="flex items-center justify-evenly w-[50%] mt-4"><i
+                                    class="ri-phone-fill  text-xl text-orange-400 font-bold"></i><i
+                                    class="ri-messenger-fill  text-xl text-orange-400 font-bold"></i><i
+                                    class="ri-mail-fill  text-xl text-orange-400 font-bold"></i></h1>
+                        </div>
+                        <div id="cnt-box" class="h-[100px] w-[210px]">
+                            <h1 id="fancy" class="text-2xl">Call Us</h1>
+                            <h1 class="w-[100%] mt-4" id="sucker">
+                                +088... Fuck You
+                            </h1>
+                        </div>
+                        <div id="cnt-box" class="h-[100px] w-[210px]">
+                            <h1 id="fancy" class="text-2xl">Find Us Here</h1>
+                            <p class="w-[100%] mt-4" id="sucker">Get The hell Out of here</p>
+                        </div>
+                        <div id="cnt-boxer" class="h-[100px] w-[210px] invisible">
+                            <h1 id="fancy" class="text-2xl">Find Us Here</h1>
+                            <p class="flex items-center justify-evenly w-[50%] mt-4">Get The hell Out of here
+                            <p>
+                        </div>
+                    </div>
+                    <div id="cnt-image" class="flex items-center justify-center w-1/2 h-[42vh]">
+                        <img src="https://raw.githubusercontent.com/bedimcode/responsive-chips-website/main/assets/img/contact-man.png"
+                            alt="" class="h-[400px] relative">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="footer" class="w-full h-[15vh] ">
+            <div id="foot-top" class="flex items-center justify-center">
+                <h1 id="fancy" class="text-center text-3xl">Chips</h1>
+            </div>
+            <div id="footer-dets" class="w-full mt-10 flex items-center justify-evenly">
+                <h1>Terms And Conditions</h1>
+                <h1>© All Rights reserved By Zubayer</h1>
+                <h1>Privacy Policy</h1>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+        integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
